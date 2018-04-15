@@ -78,16 +78,16 @@ node start.js
 
 
 
-1.发行Token
+####发行Token
 1. 运行脚本  在命令行输入 `node create_asset.js`
 如果发行成功，会在 `asset.json` 看到TokenId，这个TokenId就是刚才发行的Token的标识符。
 
 
-2.转帐
+####转帐
  1. 设置参数   用文本编辑器打开 `transfer_asset.js`，将 `'DJw4edxgaSbt7VGTsmsadmRdYJ+Vvz1Hrhy+JGrAyiA='`替换成刚`asset.json`中的TokenId。
  2. 在命令行输入 `node transfer_asset.js` 
 
-3.查询余额
+####查询余额
 1. 设置参数   用文本编辑器打开 `balance.js`，将 `'DJw4edxgaSbt7VGTsmsadmRdYJ+Vvz1Hrhy+JGrAyiA='`替换成刚`asset.json`中的TokenId。
 2. 运行脚本  在命令行输入 `node balance.js`
 
