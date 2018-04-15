@@ -1,7 +1,7 @@
-如何在TrustNote 公链上发行你自己的Token
+在TrustNote 公链上发行Token
 ===============================
 
-Note: 以下教程在Ubuntu 16.04 上测试通过，根据以下操作指引，开发者可以快速地在TrustNote公链上发行自己的Token。
+以下教程在Ubuntu 16.04 上测试通过，根据以下操作指引，开发者可以快速地在TrustNote公链上发行自己的Token。
 <!-- //NODE.JS ENV  -->
 <!-- // VERSION  -->
 ## 环境配置
@@ -43,7 +43,7 @@ npm install
 由于网络原因，运行`npm install `可能会耗费非常长的时间，有时候甚至会安装失败。用户可以 更改npm源来解决此问题，具体操作参考 https://yq.aliyun.com/articles/5543 。
 
 
-设置测试网络参数 
+设置测试网络参数  
 ```bash
  bash testify.sh
 ```
@@ -62,7 +62,7 @@ node start.js
 如果可以在日志中看到 `validating joint identified by unit...`字样，说明此时节点已经开始同步数据。如需查看完整日志，可以打开日志文件查看。划红线的路径即是日志文件路径。
 ![](./images/success.png )
 
-此时开始同步数据，在网络良好的情况下，数据同步大概需要10~20分钟的时间。
+在网络良好的情况下，数据同步大概需要10~20分钟的时间。
 
 
 
@@ -70,7 +70,7 @@ node start.js
 
 1：打开 www.trustnote.org/token.html 
 
-2：输入钱包地址，当前节点地址可以在 `address.json`文件中查看。
+2：输入钱包地址。（当前节点地址可以在 `address.json`文件中查看）
 ![](./images/getmoney.png )
 
 3：点击 `执行` 领取TTT。
@@ -84,7 +84,6 @@ node start.js
 
 
 2.转帐
-
  1. 设置参数   用文本编辑器打开 `transfer_asset.js`，将 `'DJw4edxgaSbt7VGTsmsadmRdYJ+Vvz1Hrhy+JGrAyiA='`替换成刚`asset.json`中的TokenId。
  2. 在命令行输入 `node transfer_asset.js` 
 
@@ -92,3 +91,9 @@ node start.js
 1. 设置参数   用文本编辑器打开 `balance.js`，将 `'DJw4edxgaSbt7VGTsmsadmRdYJ+Vvz1Hrhy+JGrAyiA='`替换成刚`asset.json`中的TokenId。
 2. 运行脚本  在命令行输入 `node balance.js`
 
+
+
+
+**注意：** 
+1. 当前运行环境是TrustNote测试网络。
+2.  测试网络浏览器地址 https://testexplorer.trustnote.org
