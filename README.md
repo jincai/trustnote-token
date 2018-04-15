@@ -29,7 +29,7 @@ sudo apt-get install -y build-essential
 从github.com上下载示例代码
 
 ```bash
-git clone https://github.com/llcds/trustnote-token.git
+git clone git@github.com:llcds/trustnote-token.git
 ```
  安装 node依赖包
 ```bash
