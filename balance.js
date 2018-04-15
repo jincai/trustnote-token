@@ -1,7 +1,7 @@
 "use strict";
 var headlessWallet = require('trustnote-headless');
 var eventBus = require('trustnote-common/event_bus.js');
-var assetUtils = require('./assetManager.js');
+var assetUtils = require('./assetUtils.js');
 headlessWallet.setupChatEventHandlers();
 eventBus.on('headless_wallet_ready', function(){
 	headlessWallet.readSingleAddress(function(address){
