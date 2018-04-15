@@ -4,7 +4,7 @@
 Note: 以下教程在Ubuntu 16.04 上测试通过，根据以下操作指引，开发者可以快速地在TrustNote公链上发行自己的Token。
 <!-- //NODE.JS ENV  -->
 <!-- // VERSION  -->
-# 环境配置
+## 环境配置
 安装 Node.js 8:
 ```bash
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -51,8 +51,8 @@ npm install
 ### 运行
 
 启动节点，等待数据同步
-```
-node run startup
+``` bash
+node start.js
 ```
 在启动节点过程中，遇到需要输入参数的地方，全部按回车键
 ![](./images/devicename.png )
@@ -62,15 +62,18 @@ node run startup
 如果可以在日志中看到 `validating joint identified by unit...`字样，说明此时节点已经开始同步数据。如需查看完整日志，可以打开日志文件查看。划红线的路径即是日志文件路径。
 ![](./images/success.png )
 
-此时开始同步数据，在网络良好的情况下，数据同步大概需要十分钟的时间。
+此时开始同步数据，在网络良好的情况下，数据同步大概需要10~20分钟的时间。
 
 
 
-在TrustNote公链上发行Token，转账都需要花费一定量的TTT，开发者需要到 www.baidu.com 上领取测试用的TTT。具体操作如下：
+在TrustNote公链上发行Token，转账都需要花费一定量的TTT，开发者需要到 www.trustnote.org/token.html 上领取测试用的TTT。具体操作如下：
 
-1：输入地址，当前节点地址可以在 `address.json`文件中查看。
+1：打开 www.trustnote.org/token.html 
+
+2：输入钱包地址，当前节点地址可以在 `address.json`文件中查看。
 ![](./images/getmoney.png )
-2：点击 `执行` 领取TTT。
+
+3：点击 `执行` 领取TTT。
 
 
 
