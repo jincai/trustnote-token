@@ -1,7 +1,7 @@
 在TrustNote 公链上发行Token
 ===============================
 
-以下教程在Ubuntu 16.04、OSX 10.13 上测试通过，根据以下操作指引，开发者可以快速地在TrustNote测试链上发行自己的Token。
+以下教程在Ubuntu 16.04、OSX 10.13 上测试通过，根据以下操作指引，开发者可以快速地在TrustNote测试链上发行自己的Token。
 <!-- //NODE.JS ENV  -->
 <!-- // VERSION  -->
 
@@ -53,7 +53,7 @@ node start.js
 在启动节点过程中，遇到需要输入参数的地方，按Enter键默认即可
 ![](./images/devicename.png )
 
-设置passphrase，直接按Enter键即可
+设置passphrase，直接按Enter键即可
 ![](./images/passprase.png )
 
 出现如下界面时，不要关闭窗口
